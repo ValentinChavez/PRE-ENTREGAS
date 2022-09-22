@@ -11,4 +11,5 @@ let stockProductos = [
     {id: 10, nombre: "Guitarra Electrica Squier", tipo: "cuerda", cantidad: 1, desc: "Muy buena para tocar Rock, Reggae, y basicamente cualquier cosa que se te ocurra", precio: 38000, img: './img/guitarra3.jpg'},
     {id: 11, nombre: "Saxofon Soprano", tipo: "viento", cantidad: 1, desc: "Un instrumento eleganrte para tocar lo que mas te guste", precio: 36000, img: './img/saxo.jpg'},
     {id: 12, nombre: "Violoncello de concierto", tipo: "cuerda", cantidad: 1, desc: "Ideal para tocar musica clasica", precio: 65000, img: './img/chelo.jpg'},
+    
 ]

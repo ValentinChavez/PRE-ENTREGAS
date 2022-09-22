@@ -122,3 +122,4 @@ const actualizarCarrito = () => {
     //empezando en 0.
 
 }
+
