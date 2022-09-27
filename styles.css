@@ -12,6 +12,7 @@ img {
     margin-bottom: 10px;
 }
 header {
+    background-color: lightslategray;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,16 +21,16 @@ header {
     margin-bottom: 20px;
 }
 h1 {
-    color: royalblue;
+    color: black;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 50px;
 }
 #boton-carrito {
     border: none;
-    color: royalblue;
+    color: black;
     font-size: 40px;
-    background-color: white;
+    background-color: lightslategray;
     border-radius: 50%;
     padding: 10px 20px;
     transition: all .3s;
@@ -37,10 +38,14 @@ h1 {
 #boton-carrito:hover {
     cursor: pointer;
     color: white;
-    background-color: royalblue;
+    background-color: grey;
 }
 #boton-carrito:focus {
     outline: none;
+}
+
+body {
+    background-color: rgb(236, 233, 233);
 }
 
 #contenedor-productos {
@@ -65,8 +70,8 @@ p {
     font-weight: 700;
 }
 .boton-agregar {
-    background-color: royalblue;
-    color: white;
+    background-color: lightslategray;
+    color: black;
     font-size: 18px;
     font-weight: 700;
     padding: 5px;
@@ -74,6 +79,8 @@ p {
 }
 .boton-agregar:hover {
     cursor: pointer;
+    color:white;
+    background-color: grey;
 }
 .boton-agregar:focus {
     outline: none;
@@ -112,7 +119,7 @@ p {
 }
 
 .modal-carrito h3 {
-    color: royalblue;
+    color: lightslategray;
     padding-bottom: 5px;
 }
 .modal-carrito #carritoCerrar {
@@ -120,7 +127,7 @@ p {
     top: 15px;
     right: 15px;
     font-size: 20px;
-    color: royalblue;
+    color: lightslategray;
     border: none;
     background-color: white;
 }
@@ -136,7 +143,7 @@ p {
 }
 
 .productoEnCarrito {
-    border-left: 5px solid lightblue;
+    border-left: 5px solid grey;
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
     margin: 5px 0;
@@ -145,7 +152,7 @@ p {
     justify-content: space-between;
 }
 .productoEnCarrito:hover {
-    border-left: 5px solid royalblue;
+    border-left: 5px solid black;
 }
 
 .boton-eliminar {
@@ -164,5 +171,5 @@ p {
 
 .pie h4{
     text-align: center;
-    color: royalblue;
+    color: grey;
 }

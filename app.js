@@ -123,3 +123,14 @@ const actualizarCarrito = () => {
 
 }
 
+const btn = document.querySelector('#vaciar-carrito');
+
+btn.addEventListener( 'click' , () => {
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Su Carrito Se Vació Correctamente',
+        showConfirmButton: false,
+        timer: 1500
+    })
+});
