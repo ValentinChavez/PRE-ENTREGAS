@@ -25,6 +25,36 @@ botonVaciar.addEventListener('click', () => {
     actualizarCarrito()
 })
 
+
+const lista = document.querySelector('#contenedor-productos')
+
+fetch('/stock.json')
+    .then( (res) => res.json())
+    .then( (data) => {
+
+        data.forEach((producto) => {
+            const divi= document.createElement('div')
+            divi.innerHTML = `
+            <img src=${producto.img} alt="">
+            <h3>${producto.nombre}<h3>
+            <p class="precioProducto">Precio: ${producto.precio}</p>
+            <button id="agregar${producto.id}" class="boton-agregar">agregar <i class="fas fa-shoping-cart"> </i> </button>
+
+            `
+
+            lista.append(divi)
+
+            const boton = document.getElementById(`agregar${producto.id}`)
+            //Por cada elemento de mi array, creo un div, lo cuelgo, le pongo un id particular, una vez colgado
+            //le hago un get element by id, Obtengo el elemento y a dicho elemento le agregamos
+            //el add event listener
+        
+            boton.addEventListener('click', () => {
+                //esta funcion ejecuta el agregar el carrito con la id del producto
+                agregarAlCarrito(producto.id)
+        })
+    })
+/*
 //INYECTAR EL HTML
 stockProductos.forEach((producto) => {
     const div = document.createElement('div')
@@ -50,6 +80,7 @@ stockProductos.forEach((producto) => {
         agregarAlCarrito(producto.id)
     })
 })
+*/
 
 //AGREGAR AL CARRITO
 const agregarAlCarrito = (prodId) => {
@@ -133,4 +164,5 @@ btn.addEventListener( 'click' , () => {
         showConfirmButton: false,
         timer: 1500
     })
-});
+})
+})
